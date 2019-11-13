@@ -18,7 +18,7 @@ In this project we will construct a simple recurrent neural network for the purp
 
 ![](https://github.com/gauravansal/Deploying-a-Sentiment-Analysis-Model/blob/master/Web%20App%20Diagram.svg)
 
-The diagram above gives an overview of how the various services will work together. On the far right is the model which we trained above and which is deployed using SageMaker. On the far left is our web app that collects a user's movie review, sends it off and expects a positive or negative sentiment in return.
+The diagram above gives an overview of how the various Amazon Web Services will work together. On the far right is the model which we will trained and which will be deployed using SageMaker. On the far left is our web app that collects a user's movie review, sends it off and expects a positive or negative sentiment in return.
 
 In the middle is where some of the magic happens. We will construct a Lambda function, which you can think of as a straightforward Python function that can be executed whenever a specified event occurs. We will give this function permission to send and recieve data from a SageMaker endpoint.
 
@@ -82,8 +82,7 @@ The deployment project which we will be working on is intended to be done using 
 	- Review entered: "Most of the time movies are anticipated like this they end up falling short, way short. Joker is the first time I was more than happy with the hype. Please ignore the complaints of "pernicious violence" as they are embarrassing to say the least. We haven't seen a comic movie this real before. If we ever "deserved" a better class of criminal - Phillips and Phoenix have delivered. This is dark, Joker IS dark and you will fall in love with the villain as you should. The bad guys are always more romantic anyway."
 	- Output Sentiment: Your review was POSITIVE!
 
-* Read the entire analysis in the below mentioned project notebook. 
-[Project Notebook: Deploy a Sentiment Analysis Model](https://nbviewer.jupyter.org/github/gauravansal/Deploying-a-Sentiment-Analysis-Model/blob/master/SageMaker%20Project.ipynb)
+* [Project Notebook: Deploy a Sentiment Analysis Model](https://nbviewer.jupyter.org/github/gauravansal/Deploying-a-Sentiment-Analysis-Model/blob/master/SageMaker%20Project.ipynb)
 
 ## Screenshots<a name="screenshots"></a>
 
